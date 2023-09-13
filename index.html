@@ -250,6 +250,14 @@
           max-height: inherit !important;
         }
       }
+
+      /* Estilo para las imágenes en pantallas pequeñas (menor a 602px) */
+      @media (max-width: 602px) {
+        .adapt-img-samall {
+          width: 50% !important;
+          height: auto !important;
+        }
+      }
     </style>
   </head>
   <body
@@ -424,8 +432,6 @@
               </tr>
             </table>
 
-
-
             <table
               class="es-content"
               cellspacing="0"
@@ -536,24 +542,6 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
             <table
               class="es-content"
               cellspacing="0"
@@ -664,34 +652,6 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
             <table
               class="es-content"
               cellspacing="0"
@@ -803,53 +763,7 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <table
+            <table
               class="es-content"
               cellspacing="0"
               cellpadding="0"
@@ -960,25 +874,6 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <table
               class="es-footer"
               cellspacing="0"
@@ -1088,6 +983,7 @@
                 </td>
               </tr>
             </table>
+
             <table
               class="es-footer"
               cellspacing="0"
@@ -1248,7 +1144,7 @@
                                         font-size: 14px;
                                       "
                                       ><img
-                                        class="adapt-img"
+                                        class="adapt-img adapt-img-samall"
                                         src="./public/insta.jpg"
                                         alt
                                         style="
@@ -1319,7 +1215,7 @@
                                         font-size: 14px;
                                       "
                                       ><img
-                                        class="adapt-img"
+                                        class="adapt-img adapt-img-samall"
                                         src="./public/face.jpg"
                                         alt
                                         style="
@@ -1390,7 +1286,7 @@
                                       "
                                       ><img
                                         class="adapt-img"
-                                        src="./public/4.jpg"
+                                        src="./public/twitter.jpg"
                                         alt
                                         style="
                                           display: block;
