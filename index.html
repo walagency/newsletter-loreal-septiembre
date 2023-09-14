@@ -190,7 +190,7 @@
           width: 100% !important;
           height: auto !important;
         }
-         .adapt-img-footer {
+        .adapt-img-footer {
           width: 100% !important;
           height: auto !important;
         }
@@ -255,32 +255,42 @@
         }
       }
 
-
-
-       @media (max-width: 602px) {
-        .adapt-img-footer{
-          width: 20% !important;
+      @media (width: 602px) {
+        /* Mostrar la imagen solo cuando el ancho de pantalla es 768px */
+        .image-768 {
+          display: block;
+        }
       }
-      }
 
-        /* Estilo para las imágenes en pantallas pequeñas (menor a 602px) */
       @media (max-width: 602px) {
-        .es-m-p20b {
-          padding-bottom: 1px !important;
+        /* Ocultar la imagen cuando el ancho de pantalla es menor o igual a 768px */
+        .image-768 {
+          display: none;
         }
       }
 
-
-      @media (max-width: 375px) {
-        .image-row {
-          display: contents;
+      @media (width: 602px) {
+        .imagen-footer-new {
+          display: flex;
         }
       }
-     
 
-   
-   
+      @media (min-width: 603px) {
+        .imagen-footer-new {
+          display: none;
+        }
+      }
 
+      .image-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imagen-footer-new {
+        margin: 0; /* Espacio entre las imágenes */
+        min-width: 5%;
+      }
     </style>
   </head>
   <body
@@ -786,36 +796,6 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <table
               class="es-content"
               cellspacing="0"
@@ -927,37 +907,6 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <table
               class="es-footer"
               cellspacing="0"
@@ -1068,42 +1017,8 @@
               </tr>
             </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <table
-              class="es-footer"
+              class="es-footer image-768"
               cellspacing="0"
               cellpadding="0"
               align="center"
@@ -1121,7 +1036,6 @@
             >
               <tr>
                 <td align="center" style="padding: 0; margin: 0">
-
                   <table
                     class="es-footer-body"
                     cellspacing="0"
@@ -1140,10 +1054,8 @@
                     <tr>
                       <td align="left" style="padding: 0; margin: 0">
                         <!--[if mso]><table style="width:600px" cellpadding="0" cellspacing="0"><tr><td style="width:275px" valign="top"><![endif]-->
-                        
-                        
-                        
-                          <table
+
+                        <table
                           cellpadding="0"
                           cellspacing="0"
                           class="es-left"
@@ -1174,320 +1086,296 @@
                                   border-spacing: 0px;
                                 "
                               >
-                              <tr>
-                                <!--imagen web-->
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0;
-                                    margin: 0;
-                                    font-size: 0px;
-                                  "
-                                >
-                                  <a
-                                    target="_blank"
-                                    href="https://www.loreal.com/es-pe/peru/"
+                                <tr>
+                                  <!--imagen web-->
+                                  <td
+                                    align="center"
                                     style="
-                                      -webkit-text-size-adjust: none;
-                                      -ms-text-size-adjust: none;
-                                      mso-line-height-rule: exactly;
-                                      text-decoration: underline;
-                                      color: #ffffff;
-                                      font-size: 14px;
+                                      padding: 0;
+                                      margin: 0;
+                                      font-size: 0px;
                                     "
-                                    ><img
-                                      class="adapt-img"
-                                      src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/web.jpg"
-                                      alt
+                                  >
+                                    <a
+                                      target="_blank"
+                                      href="https://www.loreal.com/es-pe/peru/"
                                       style="
-                                        display: block;
-                                        border: 0;
-                                        outline: none;
-                                        text-decoration: none;
-                                        -ms-interpolation-mode: bicubic;
+                                        -webkit-text-size-adjust: none;
+                                        -ms-text-size-adjust: none;
+                                        mso-line-height-rule: exactly;
+                                        text-decoration: underline;
+                                        color: #ffffff;
+                                        font-size: 14px;
                                       "
-                                      width="275"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
+                                      ><img
+                                        class="adapt-img"
+                                        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/web.jpg"
+                                        alt
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          outline: none;
+                                          text-decoration: none;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                        width="275"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
 
-
-
-
-                      <!--[if mso]></td><td style="width:50px" valign="top"><![endif]-->
-                      <table
-                        cellpadding="0"
-                        cellspacing="0"
-                        class="es-left"
-                        align="left"
-                        style="
-                          mso-table-lspace: 0pt;
-                          mso-table-rspace: 0pt;
-                          border-collapse: collapse;
-                          border-spacing: 0px;
-                          float: left;
-                        "
-                      >
-                        <tr>
-                          <td
-                            class="es-m-p20b"
-                            align="center"
-                            style="padding: 0; margin: 0; width: 50px"
-                          >
-                            <table
-                              cellpadding="0"
-                              cellspacing="0"
-                              width="100%"
-                              role="presentation"
-                              style="
-                                mso-table-lspace: 0pt;
-                                mso-table-rspace: 0pt;
-                                border-collapse: collapse;
-                                border-spacing: 0px;
-                              "
-                            >
-                              <tr>
-                                <!--imagen insta-->
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0;
-                                    margin: 0;
-                                    font-size: 0px;
-                                  "
-                                >
-                                  <a
-                                    target="_blank"
-                                    href="https://www.instagram.com/lorealgroupe_latam/"
-                                    style="
-                                      -webkit-text-size-adjust: none;
-                                      -ms-text-size-adjust: none;
-                                      mso-line-height-rule: exactly;
-                                      text-decoration: underline;
-                                      color: #ffffff;
-                                      font-size: 14px;
-                                    "
-                                    ><img
-                                      class="adapt-img-footer adapt-imgun"
-                                      src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/insta.jpg"
-                                      alt
-                                      style="
-                                        display: block;
-                                        border: 0;
-                                        outline: none;
-                                        text-decoration: none;
-                                        -ms-interpolation-mode: bicubic;
-                                      "
-                                      width="50"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]></td><td style="width:50px" valign="top"><![endif]-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      <table
-                        cellpadding="0"
-                        cellspacing="0"
-                        class="es-left"
-                        align="left"
-                        style="
-                          mso-table-lspace: 0pt;
-                          mso-table-rspace: 0pt;
-                          border-collapse: collapse;
-                          border-spacing: 0px;
-                          float: left;
-                        "
-                      >
-                        <tr>
-                          <td
-                            class="es-m-p20b"
-                            align="center"
-                            style="padding: 0; margin: 0; width: 50px"
-                          >
-                            <table
-                              cellpadding="0"
-                              cellspacing="0"
-                              width="100%"
-                              role="presentation"
-                              style="
-                                mso-table-lspace: 0pt;
-                                mso-table-rspace: 0pt;
-                                border-collapse: collapse;
-                                border-spacing: 0px;
-                              "
-                            >
-                              <tr>
-                                <!--imagen face-->
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0;
-                                    margin: 0;
-                                    font-size: 0px;
-                                  "
-                                >
-                                  <a
-                                    target="_blank"
-                                    href="https://www.facebook.com/lorealceran"
-                                    style="
-                                      -webkit-text-size-adjust: none;
-                                      -ms-text-size-adjust: none;
-                                      mso-line-height-rule: exactly;
-                                      text-decoration: underline;
-                                      color: #ffffff;
-                                      font-size: 14px;
-                                    "
-                                    ><img
-                                      class="adapt-img-footer"
-                                      src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/face.jpg"
-                                      alt
-                                      style="
-                                        display: block;
-                                        border: 0;
-                                        outline: none;
-                                        text-decoration: none;
-                                        -ms-interpolation-mode: bicubic;
-                                      "
-                                      width="50"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <!--[if mso]></td><td style="width:0px"></td><td style="width:225px" valign="top"><![endif]-->
-                      
-                      
-                      
-                      
-                      
+                        <!--[if mso]></td><td style="width:50px" valign="top"><![endif]-->
                         <table
-                        cellpadding="0"
-                        cellspacing="0"
-                        class="es-right"
-                        align="right"
-                        style="
-                          mso-table-lspace: 0pt;
-                          mso-table-rspace: 0pt;
-                          border-collapse: collapse;
-                          border-spacing: 0px;
-                          float: right;
-                        "
-                      >
-                        <tr>
-                          <td
-                            align="center"
-                            style="padding: 0; margin: 0; width: 225px"
-                          >
-                            <table
-                              cellpadding="0"
-                              cellspacing="0"
-                              width="100%"
-                              role="presentation"
-                              style="
-                                mso-table-lspace: 0pt;
-                                mso-table-rspace: 0pt;
-                                border-collapse: collapse;
-                                border-spacing: 0px;
-                              "
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="es-left"
+                          align="left"
+                          style="
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                            border-collapse: collapse;
+                            border-spacing: 0px;
+                            float: left;
+                          "
+                        >
+                          <tr>
+                            <td
+                              class="es-m-p20b"
+                              align="center"
+                              style="padding: 0; margin: 0; width: 50px"
                             >
-                              <tr>
-                                <!--imagen twitter-->
-                                <td
-                                  align="center"
-                                  style="
-                                    padding: 0;
-                                    margin: 0;
-                                    font-size: 0px;
-                                  "
-                                >
-                                  <a
-                                    target="_blank"
-                                    href="https://twitter.com/lorealcolombia"
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  border-collapse: collapse;
+                                  border-spacing: 0px;
+                                "
+                              >
+                                <tr>
+                                  <!--imagen insta-->
+                                  <td
+                                    align="center"
                                     style="
-                                      -webkit-text-size-adjust: none;
-                                      -ms-text-size-adjust: none;
-                                      mso-line-height-rule: exactly;
-                                      text-decoration: underline;
-                                      color: #ffffff;
-                                      font-size: 14px;
+                                      padding: 0;
+                                      margin: 0;
+                                      font-size: 0px;
                                     "
-                                    ><img
-                                      class="adapt-img"
-                                      src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/twitter.jpg"
-                                      alt
+                                  >
+                                    <a
+                                      target="_blank"
+                                      href="https://www.instagram.com/lorealgroupe_latam/"
                                       style="
-                                        display: block;
-                                        border: 0;
-                                        outline: none;
-                                        text-decoration: none;
-                                        -ms-interpolation-mode: bicubic;
+                                        -webkit-text-size-adjust: none;
+                                        -ms-text-size-adjust: none;
+                                        mso-line-height-rule: exactly;
+                                        text-decoration: underline;
+                                        color: #ffffff;
+                                        font-size: 14px;
                                       "
-                                      width="225"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
+                                      ><img
+                                        class="adapt-img-footer adapt-imgun"
+                                        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/insta.jpg"
+                                        alt
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          outline: none;
+                                          text-decoration: none;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                        width="50"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:50px" valign="top"><![endif]-->
 
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="es-left"
+                          align="left"
+                          style="
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                            border-collapse: collapse;
+                            border-spacing: 0px;
+                            float: left;
+                          "
+                        >
+                          <tr>
+                            <td
+                              class="es-m-p20b"
+                              align="center"
+                              style="padding: 0; margin: 0; width: 50px"
+                            >
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  border-collapse: collapse;
+                                  border-spacing: 0px;
+                                "
+                              >
+                                <tr>
+                                  <!--imagen face-->
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding: 0;
+                                      margin: 0;
+                                      font-size: 0px;
+                                    "
+                                  >
+                                    <a
+                                      target="_blank"
+                                      href="https://www.facebook.com/lorealceran"
+                                      style="
+                                        -webkit-text-size-adjust: none;
+                                        -ms-text-size-adjust: none;
+                                        mso-line-height-rule: exactly;
+                                        text-decoration: underline;
+                                        color: #ffffff;
+                                        font-size: 14px;
+                                      "
+                                      ><img
+                                        class="adapt-img-footer"
+                                        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/face.jpg"
+                                        alt
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          outline: none;
+                                          text-decoration: none;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                        width="50"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:225px" valign="top"><![endif]-->
 
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="es-right"
+                          align="right"
+                          style="
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                            border-collapse: collapse;
+                            border-spacing: 0px;
+                            float: right;
+                          "
+                        >
+                          <tr>
+                            <td
+                              align="center"
+                              style="padding: 0; margin: 0; width: 225px"
+                            >
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                                role="presentation"
+                                style="
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  border-collapse: collapse;
+                                  border-spacing: 0px;
+                                "
+                              >
+                                <tr>
+                                  <!--imagen twitter-->
+                                  <td
+                                    align="center"
+                                    style="
+                                      padding: 0;
+                                      margin: 0;
+                                      font-size: 0px;
+                                    "
+                                  >
+                                    <a
+                                      target="_blank"
+                                      href="https://twitter.com/lorealcolombia"
+                                      style="
+                                        -webkit-text-size-adjust: none;
+                                        -ms-text-size-adjust: none;
+                                        mso-line-height-rule: exactly;
+                                        text-decoration: underline;
+                                        color: #ffffff;
+                                        font-size: 14px;
+                                      "
+                                      ><img
+                                        class="adapt-img"
+                                        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/twitter.jpg"
+                                        alt
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          outline: none;
+                                          text-decoration: none;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                        width="225"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
 
+                        <!--[if mso]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-
-
-
-
-
-
-
-
-
-                      <!--[if mso]></td></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-          </table>
-        
-        </td>
-      </tr>
-    </table>
-    
-
-  
-  </div>
-  
-
-
-</body>
+    <div class="image-row">
+      <img
+        class="imagen-footer-new"
+        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/web.jpg"
+        alt="Imagen 1"
+      />
+      <img
+        class="imagen-footer-new"
+        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/insta.jpg"
+        alt="Imagen 2"
+      />
+      <img class="imagen-footer-new"
+      src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/face.jpg"Imagen
+      3">
+      <img
+        class="imagen-footer-new"
+        src="https://qixeul.stripocdn.email/content/guids/CABINET_e11262faade40f4790e37406acd2c91a0ad01da99a18bddb13e7752a58f755f3/images/twitter.jpg"
+        alt="Imagen 4"
+      />
+    </div>
+  </body>
 </html>
